@@ -2,6 +2,7 @@
 clear
 sudo apt install openjdk-8-jdk -y
 sudo apt install gradle
+Y
 clear
 cd ~
 mkdir MyGradleApp
