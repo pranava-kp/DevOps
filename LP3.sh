@@ -6,8 +6,8 @@ clear
 cd ~
 mkdir MyGradleApp
 cd MyGradleApp
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export PATH=$JAVA_HOME/jre/bin:$PATH
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
+export PATH=$JAVA_HOME/bin:$PATH
 gradle init --type java-application
 tree
 
