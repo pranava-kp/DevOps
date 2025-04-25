@@ -66,6 +66,7 @@ println 'Build is complete! Time to celebrate!'
 group = 'com.example'
 version = '1.0'
 EOF
-
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
 gradle hello
 ./gradlew greet
