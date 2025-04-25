@@ -1,20 +1,18 @@
 #!/bin/bash
 clear
-sudo apt install openjdk-8-jdk -y
-sudo apt install gradle
-sudo apt install tree
+sudo apt install openjdk-17-jdk -y
+sudo apt install gradle -y
+sudo apt install tree -y
 clear
 clear
-echo -e "\e[1;31mSelect Java version 8\e[0m"
+echo -e "\e[1;31mSelect Java version 17\e[0m"
 read -p "Press Enter to continue..."
 clear
-echo -e "\e[1;31mSelect Java version 8\e[0m"
+echo -e "\e[1;31mSelect Java version 17\e[0m"
 sudo update-alternatives --config java
 cd ~
 mkdir MyGradleApp
 cd MyGradleApp
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export PATH=$JAVA_HOME/jre/bin:$PATH
 gradle init --type java-application
 tree
 
