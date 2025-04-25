@@ -1,6 +1,7 @@
 #!/bin/bash
 clear
 sudo apt install openjdk-17-jdk -y
+sudo apt install openjdk-8-jdk -y
 sudo apt install gradle -y
 sudo apt install tree -y
 clear
