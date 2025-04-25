@@ -1,8 +1,14 @@
 #!/bin/bash
 clear
 sudo apt install openjdk-11-jdk -y
-sudo apt install maven -y
+sudo apt install maven
 sudo apt install tree
+clear
+echo -e "\e[1;31mSelect Java version 11\e[0m"
+read -p "Press Enter to continue..."
+clear
+echo -e "\e[1;31mSelect Java version 11\e[0m"
+sudo update-alternatives --config java
 clear
 echo "Enter project name:"
 read name

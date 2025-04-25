@@ -4,6 +4,12 @@ sudo apt install openjdk-8-jdk -y
 sudo apt install gradle
 sudo apt install tree
 clear
+clear
+echo -e "\e[1;31mSelect Java version 8\e[0m"
+read -p "Press Enter to continue..."
+clear
+echo -e "\e[1;31mSelect Java version 8\e[0m"
+sudo update-alternatives --config java
 cd ~
 mkdir MyGradleApp
 cd MyGradleApp
