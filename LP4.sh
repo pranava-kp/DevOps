@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 sudo apt install openjdk-11-jdk -y
-sudo apt install maven
+sudo apt install maven -y
 sudo apt install tree
 sudo apt install gradle -y
 clear
