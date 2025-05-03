@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-sudo apt install openjdk-17-jdk -y
+# sudo apt install openjdk-17-jdk -y
 sudo apt install openjdk-8-jdk -y
 sudo apt install gradle -y
 sudo apt install tree -y
@@ -12,8 +12,12 @@ clear
 echo -e "\e[1;31mSelect Java version 17\e[0m"
 sudo update-alternatives --config java
 cd ~
-mkdir MyGradleApp
-cd MyGradleApp
+clear
+echo -e "Enter Project Name"
+read name
+rm -rf $name
+mkdir $name
+cd $name
 gradle init --type java-application
 tree
 
@@ -67,7 +71,7 @@ println 'Build is complete! Time to celebrate!'
 group = 'com.example'
 version = '1.0'
 EOF
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export PATH=$JAVA_HOME/bin:$PATH
+# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# export PATH=$JAVA_HOME/bin:$PATH
 gradle hello
 ./gradlew greet
